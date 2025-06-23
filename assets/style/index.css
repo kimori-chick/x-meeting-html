@@ -1,0 +1,21 @@
+.fv-top {
+  width: 100%;
+  height: calc(100vh - 116px);
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../images/top_fv.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.fv-top_h2 {
+  position: relative;
+  z-index: 1;
+  font-family: 'Kalam', cursive;
+  font-size: 36px;
+  font-weight: 600;
+  color: #000;
+}

@@ -1,3 +1,150 @@
-li {
+html, body, main {
+  padding: 0;
+  margin: 0;
+  font-family: 'Noto sans JP';
+}
+
+main {
+  min-height: calc(100vh - 116px);
+}
+
+p, h1, h2, h3 {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
   list-style: none;
+}
+
+.common_text {
+  font-size: 16px;
+  font-weight: 400;
+  color: #3e1d35;
+  margin: 0 0 32px;
+}
+
+.common_header {
+  width: 100%;
+  border-bottom: 6px solid #fbd3ee;
+  margin: 0 0 3px;
+}
+
+.common_header_top {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.common_header_top-link {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  text-decoration: none;
+}
+
+.common_header_logo {
+  width: 50px;
+  height: 30px;
+}
+
+.common_header_title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #171521;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.common_header_title span {
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.common_header nav {
+  height: 50px;
+}
+
+.common_header_ul {
+  display: flex;
+  height: 100%;
+  padding: 0 10px;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.common_header_li {
+  list-style: none;
+  width: calc(100% / 5);
+  height: 50px;
+  border-radius: 12px;
+}
+
+.common_header_li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.common_header_li:hover a {
+  color: #8b8b8b;
+}
+
+.common_header_li.selected {
+  position: relative;
+}
+
+.common_header_li.selected::after {
+  content: '';
+  position: absolute;
+  background-color: #f95fc6;
+  width: calc(100% - 40px);
+  max-width: 128px;
+  height: 6px;
+  border-radius: 99px;
+  left: 50%;
+  bottom: -6px;
+  transform: translateX(-50%);
+}
+
+.common_header_ul li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.section {
+  margin: 0;
+  padding: 20px 40px;
+}
+
+.section-title {
+  font-size: 24px;
+  color: #7e4677;
+  padding: 8px;
+  border-bottom: 4px solid #a3a3a3;
+  margin: 0 0 24px;
+  display: block;
+  width: 100%;
+  max-width: 600px;
+}
+
+.footer {
+  padding: 30px 40px;
+  background-color: #dedede;
+}
+
+.footer_copy-right {
+  font-size: 12px;
+  color: #5d5d5d;
+  text-align: center;
 }

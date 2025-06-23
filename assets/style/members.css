@@ -1,0 +1,46 @@
+.members_ul {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.members_li {
+  width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+  display: flex;
+  gap: 48px;
+  align-items: center;
+}
+
+.members_li.item-even {
+  flex-direction: row-reverse;
+}
+
+.member_img {
+  width: 240px;
+  height: 240px;
+  display: block;
+  background-color: #b2b2b2;
+}
+
+.member_data-item {
+  width: calc(100% - 288px);
+}
+
+.member_data-label {
+  font-size: 11px;
+  display: inline-block;
+  padding-right: 48px;
+  margin: 0 0 4px;
+  border-bottom: 2px solid #f782d8;
+}
+
+.member_data-value {
+  font-size: 16px;
+  margin: 0 0 12px;
+}
